@@ -1,5 +1,13 @@
 <?php
 echo "こんにちは、世界！";
+
+
+// ここにPHPのコードを追加できます
+// 例えば、変数の定義や関数の作成など
+$greeting = "こんにちは、PHP！";
+echo $greeting;
+
+// HTMLの出力例
 ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -9,11 +17,43 @@ echo "こんにちは、世界！";
     <title>PHP Example</title>
 </head>
 <body>
-    <h1>PHPの基本例</h1>
-    <?php include 'example.php'; ?>
+    <h1><?php echo $greeting; ?></h1>
 </body>
-</html>
+</html><?php
+
+// ここにさらにPHPのコードを追加できます
+// 例えば、配列の操作やループ処理など
+$fruits = ["りんご", "ばなな", "みかん"];
+foreach ($fruits as $fruit) {
+    echo "<p>果物: $fruit</p>";
+}
+
+// 関数の定義例
+function greet($name)
+{
+    return "こんにちは、$name!";
+}
+
+echo greet("ユーザー");
+
+// PHPの終了タグは省略可能ですが、ファイルの終わりに書くこともできます
+?>
 <?php
-// ここにPHPコードを追加できます
-echo "<p>このページはPHPを使用して生成されています。</p>";
-?>      
+// ここにさらにPHPのコードを追加できます
+// 例えば、条件分岐やループなど
+$number = 5;
+if ($number > 0) {
+    echo "<p>$number は正の数です。</p>";
+} else {
+    echo "<p>$number は正の数ではありません。</p>";
+}
+?><?php
+// ここにさらにPHPのコードを追加できます
+// 例えば、日付の表示や計算など
+$date = date("Y-m-d H:i:s");
+echo "<p>現在の日付と時刻: $date</p>";
+
+// 数値の計算例
+$sum = 10 + 20;
+echo "<p>10 + 20 = $sum</p>";
+?>        
